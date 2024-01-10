@@ -1,0 +1,42 @@
+.tbl {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    border: 5px solid rgb(19, 17, 17);
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+
+.letter{
+    color:black;
+    text-align: center;
+    text-align: left;
+    padding: 8px;
+    border: 5px solid rgb(19, 17, 17);
+    background-color: #FFE4B5;
+}
+
+.text-head{
+    text-align: center;
+    text-align: left;
+    padding: 8px;
+    border: 5px solid rgb(19, 17, 17);
+    background-color: #FF8C00;
+}
+
+
+ul.a {
+    list-style-type: circle;
+    list-style-position:inside;
+    padding-left: 200px;
+}
+
+.pack{
+    color: navy;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+

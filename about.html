@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>about us</title>
+
+    <link rel="stylesheet" type="text/css" href="css/topnav.css" >
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <style type="text/css">
+        .main{
+           background-image:  url("images/colo.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center,center;
+           background-attachment: fixed;
+           padding: 50px;
+           border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-container "><!--start w3-container-->
+        <div class="topnav" id="myTopnav"><!-- strat topnav-->
+            <a href="welcome.html" >Home</a>
+            <a href="image.html">Images</a>
+            <a href="service.html">Services</a>
+            <a href="booking.html">Booking</a>
+            <a href="packages.html">Packages</a>
+            <a href="about.html" class="active1">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div><!--end topnav-->
+        <div class="main">
+        <div class="w3-row "><!--start row 1 -->
+            <div class="w3-third w3-container "><!--start w3-third -->
+              <div class="about">Our Vision</div>
+              <div class="about-img">
+              <img src="images/about/vision.jpg" alt="vission" id="img1" style="width:80%;max-width:320px">
+            </div>
+            <div class="about-text" id="para1">
+                To have your properties be known as among the premier luxury destinations in the world; to create personal experiences for your guests that they will treasure for a life time; and to be the destination of choise for your discerning guest, members, associates, communities and investors.
+            </div>
+            </div><!--end w3-third -->
+            <div class="w3-third w3-container"><!--start w3-third -->
+                <div class="about">Our Mission</div>
+                <div class="about-img">
+                    <img src="images/about/mission.png.742x400_q85_crop.png" alt="mission" id="img2" style="width:80%;max-width:320px">
+                </div>
+                <div class="about-text" id="para2">
+                    Ocean house,with its unique sense of story and place, is devoted to creating enduring relationships with our guests and members by poviding highly personalized service and gracious hospitality in an informally elegant setting.
+                </div>
+            </div><!--end w3-third -->
+            <div class="w3-third w3-container"><!--start w3-third -->
+                <div class="about">Our Values</div>
+                <div class="about-img">
+                    <img src="images/about/48363950-our-values.jpg" alt="values"  id="img3" style="width:68%;max-width:320px">
+                </div>
+                <div class="about-text" id="para3">
+                    Pursuing this mission is a dedicated team of talented individuals. Knowledge and passion for exceptional, personalized service are the foundation upon which our experience is built.
+                </div>
+            </div><!--end w3-third -->
+            
+        </div>
+         </div>   <!--end row 1-->
+
+        <div class="footer "><!--start footer-->
+            <div class="w3-row "><!--start row 1 -->
+                <div class="w3-quarter w3-container ">
+                  <a href="#" class="fa fa-facebook" ></a>
+                  <p>Facebook</p>
+                </div>
+                <div class="w3-quarter w3-container">
+                  <a href="#" class="fa fa-twitter" ></a>
+                  <p>twitter</p>
+                </div>
+                <div class="w3-quarter w3-container">
+                  <a href="#" class="fa fa-instagram" ></a>
+                  <p>instagram</p>
+                </div>
+                <div class="w3-quarter w3-container ">
+                  <div class="footer-item">
+                    
+                    <table>
+                        <tr>
+                         <th colspan="2"> Contact Info</th>
+                        </tr>
+                        <tr>
+                          <td><img src="images/placeholder.png" alt=""></td>
+                          <td>King Street,<br />Galle Fort, Galle</td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/phone.png" alt=""></td>
+                          <td>(+94)418563217</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div><!--end row 1-->
+          </div><!--end footer-->
+    </div><!-- end w3-container-->
+
+    <script>
+        /* start top navbar*/
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+      /* end top navbar */
+    </script>
+    <script src="jquery.js"></script>
+ <script>
+  $(document).ready(function() {
+
+    $('#img1').on('click',function() {
+      $('#para1').toggle(4000, function() {
+        alert(' our vision');
+      });
+    });
+    $('#img2').on('click',function() {
+      $('#para2').toggle(4000, function() {
+        alert(' our mission');
+      });
+    });
+    $('#img3').on('click',function() {
+      $('#para3').toggle(4000, function() {
+        alert(' our values');
+      });
+    });
+  });
+ </script>
+
+</body>
+</html>

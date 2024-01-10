@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="css/topnav.css" >
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <style type="text/css">
+      .container {
+           background-image:  url("images/booking.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center,center;
+           background-attachment: fixed;
+           padding: 50px;
+           border-radius: 5px;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="w3-container "><!--start w3-container-->
+        <div class="topnav" id="myTopnav"><!-- strat topnav-->
+            <a href="welcome.html" >Home</a>
+            <a href="image.html">Images</a>
+            <a href="service.html">Services</a>
+            <a href="booking.html" class="active1">Booking</a>
+            <a href="packages.html">Packages</a>
+            <a href="about.html">About</a>
+           
+        </div><!--end topnav-->
+        <h1 style="background-image: linear-gradient(45deg,#4D79ff,#ffffb3,#ff99bb);" id="para">Booking</h1>
+        <div class="container">
+            <form action="">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname"> Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email" name="email" placeholder="Your email..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="cno"> Contact No</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="cno" name="cno" placeholder="Your contact No..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="indate"> In Date</label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="indate" name="indate" >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="outdate"> Out Date</label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="outdate" name="outdate" >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="people">How many people</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="adults" name="adults" placeholder="No of Adults..">
+                  <input type="text" id="child" name="child" placeholder="No of child..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="room"> No of Rooms</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="room" name="room" placeholder="No of room..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="msg">Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="msg" name="msg" placeholder="Write msg." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row-button">
+                <button id="myBtn" class="btn success" onclick="myFunction()">Submit</button>
+                <button class="btn danger" onclick="myFunction_()">Cancel</button>
+              </div>
+            </form>
+          </div>
+
+          
+
+          <div class="footer "><!--start footer-->
+            <div class="w3-row "><!--start row 1 -->
+                <div class="w3-quarter w3-container ">
+                  <a href="#" class="fa fa-facebook" ></a>
+                  <p>Facebook</p>
+                </div>
+                <div class="w3-quarter w3-container">
+                  <a href="#" class="fa fa-twitter" ></a>
+                  <p>twitter</p>
+                </div>
+                <div class="w3-quarter w3-container">
+                  <a href="#" class="fa fa-instagram" ></a>
+                  <p>instagram</p>
+                </div>
+                <div class="w3-quarter w3-container ">
+                  <div class="footer-item">
+                    
+                    <table>
+                        <tr>
+                         <th colspan="2"> Contact Info</th>
+                        </tr>
+                        <tr>
+                          <td><img src="images/placeholder.png" alt=""></td>
+                          <td>King Street,<br />Galle Fort, Galle</td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/phone.png" alt=""></td>
+                          <td>(+94)418563217</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div><!--end row 1-->
+          </div><!--end footer-->
+    </div><!--end w3-container-->
+
+    
+    
+       
+    <script>
+        /* start top navbar*/
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+      /* end top navbar */
+
+    </script>
+     <script>
+      function myFunction(){
+        alert("Your booking was successful!");
+      }
+    </script>
+    <script>
+     function myFunction_(){
+        alert("Plese try again");
+      }
+      
+    </script>
+   
+</body>
+</html>
